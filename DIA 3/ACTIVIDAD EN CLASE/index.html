@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">body{font-family: Arial, Helvetica, sans-serif;}</style>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <img src="" alt="">
+    <h2>LISTADO DE CONTENIDO EN BODEGA</h2>
+    <table>
+        <thead>
+            <tr> <th>PRODUCTO</th><th>PRECIO</th><th>STOCK</th></tr>
+        </thead>
+        <tbody>
+            <tr> <td>Medias Veladas</td> <td>$200 USD/docena</td> <td>45 docenas</td></tr>
+            <tr> <td>Medias con imanes para parejas</td> <td>$50 USD/docena</td> <td>105 docenas</td></tr>
+            <tr> <td>Medias Tobilleras con estilos de caricaturas</td> <td>$58 USD/docena</td> <td>500 docenas</td></tr>
+            <tr> <td>Medias deportivas para hombre</td> <td>$80 USD/docena</td> <td>450 docenas</td></tr>
+            <tr> <td>Medias para compleaños</td> <td>$80 USD/docena</td> <td>450 docenas</td></tr>
+        </tbody>
+    </table>
+    <br>
+    <div id="funcion">
+    <div id="funcion2">
+        <form class="botones">
+        <label form="">añade aquí tu numero</label>
+        <input type="number" id="numero"/>
+    </form>
+    <button class="botones" id="boton">DESCUBRELO</button>
+    </div>
+    <h1 id="resultado"></h1>
+    </div>
+    <script>
+        
+        let mensaje = "";
+        
+        document.getElementById("boton").onclick=function identificarValor() {
+            let numero = document.getElementById("numero").value;
+            if (numero<0){
+            mensaje="El numero es negativo";
+        }
+            if (numero>0){
+            mensaje="El numero es positivo";
+        }
+            if (numero==0){
+            mensaje="El numero es neutro";
+        }
+        document.getElementById("resultado").textContent=mensaje;
+        }
+        
+    </script>
+    <select name="PAIS" id="">
+        <option value="">COLOMBIA</option>
+        <option value="">VENEZUELA</option>
+        <option value="">ECUADOR</option>
+        <option value="">ARGENTINA</option>
+    </select>
+
+</body>
+</html>

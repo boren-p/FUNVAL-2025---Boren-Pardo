@@ -1,0 +1,147 @@
+body{
+    display:flex;
+    background-color:rgb(22, 22, 22);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(255, 255, 255, 0.671);
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.marco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a{
+    display:flex;
+    background-color: rgb(39, 39, 39);
+    height: 1310px;
+    width: 650px;
+}
+
+.b{
+    display:flex;
+    background-color: rgb(39, 39, 39);
+    height: 80px;
+    width: 480px;
+    justify-content:flex-end ;
+}
+
+.c{
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    height: 40px;
+    width: 480px;
+    align-items: baseline;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+.d{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(22, 22, 22);
+    color:grey;
+    height: 82px;
+    width: 480px;
+}
+
+.e{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 82px;
+    width: 480px;
+    margin-top: 13px;
+}
+
+#logo{
+    height: 80px;
+    width: auto;
+    padding: 35px;
+}
+
+.links{
+    display: flex;
+    height: 100px;
+    width: 500px;
+    justify-content: space-between;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    height: 82px;
+    width: 480px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.nombres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 480px;
+}
+
+.src{
+    background-color:aqua;
+    display: flex;
+    height: 60px;
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb{background-color: rgb(72, 92, 206);} #fb1{height: 30px; width: auto;}
+.ggl{background-color: white; } #ggl1{height: 40px; width: auto;}
+.ps{background-color: rgb(0, 166, 243);} #ps1{height: 60px; width: auto;}
+.xbx{background-color: rgb(3, 122, 23);} #xbx1{height: 30px; width: auto;}
+.ntd{background-color: rgb(223, 1, 1);} #ntd1{height: 30px; width: auto;}
+
+.enlace{
+    display: flex;
+}
+p{
+    align-self:flex-start;
+    color:white;
+}
+
+select{
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    border:none;
+    padding: 30px;
+    color:rgba(255, 255, 255, 0.671);
+    font-size: 20px;
+}
+
+.input{
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    border:none;
+    color:rgba(255, 255, 255, 0.671);
+    padding: 30px;
+    font-size: 20px;
+}
+
+.nombre{
+    height: 81px;
+    width: 225px;
+}
+
+.check{
+    transform: scale(1.5);
+    accent-color: grey;
+    margin-right: 25px;
+}
+

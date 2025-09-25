@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0px
+
+}
+
+table{
+    align-items: center;
+}
+
+#funcion{
+    display: flex;
+    background-color: aqua;
+    height: 120px;
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    gap:0px;
+    padding:10px;
+}
+#funcion2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+    margin:10px;
+}
+.botones{
+    background-color: aquamarine;
+}
+/* #formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+ 
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenedor {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.contenedor-caja12 {
+  display: flex;
+  gap: 10px;
+}
+.caja {
+  background: blue;
+  color: white;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.caja3 {
+  background-color: blue;
+  color: white;
+  height: 100px;
+}
+  */
