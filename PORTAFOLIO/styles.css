@@ -1,0 +1,396 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/FONDO.jpg);
+    background-size: 100vh;
+    
+}
+
+.caja-cst{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/cassete\ caja.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    min-width: 300px;
+    width: 300px;
+    aspect-ratio: 257 / 165;
+}
+
+h2{
+    flex:1;
+    font-size: small;
+    margin:10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cst1{
+    background-image: url(./img/cts/CASSETE\ 1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 257px;
+    height: 157px;
+    border-radius: 10px;
+}
+
+.cst2{
+    background-image: url(./img/cts/cassete\ 2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 257px;
+    height: 155px;
+    border-radius: 10px;
+}
+
+.cst3{
+    background-image: url(./img/cts/cassete\ 3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.cst4{
+    background-image: url(./img/cts/cassete\ 4.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 257px;
+    height: 157px;
+    border-radius: 10px;
+}
+
+.rs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+}
+
+.dsc{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin:5px;
+}
+
+.img{
+    display: flex;
+    z-index: 10;
+    animation: girar 5s linear infinite;
+}
+
+.dsp{
+    font-size:30px;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* card giratoria*/
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+  color: white;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: url(./img/1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.flip-card-back {
+  background-image: url(./img/2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+/* card giratoria*/
+
+/*redes sociales*/
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  z-index: 20;
+  padding-top: 157px;
+  padding-left: 157px;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  margin-top: 1.5em;
+  margin-left: -.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp {
+  margin-top: -.6em;
+  margin-left: 1.2em;
+  fill: #00ff00;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gmail {
+  margin-top: -.9em;
+  margin-left: -1.2em;
+  fill: #f14336;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+  fill: white;
+}
+/*redes sociales*/
+
+/*glitch text*/
+.glitch {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  animation: shift 1s ease-in-out infinite alternate;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
+/*glitch text*/
